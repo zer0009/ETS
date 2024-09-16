@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Expert well drilling and installation services for reliable water access across various industries." />
+    <meta name="author" content="ETS" />
+    <title>Well Drilling and Installation Services - ETS</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom-styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <div id="header-placeholder"></div>
+
+    <section class="page-section bg-primary text-white mb-0" id="hero">
+        <div class="container">
+            <h1 class="page-section-heading text-center text-uppercase text-white">Well Drilling and Installation</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-tint"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">ETS provides expert well drilling and installation services for groundwater extraction, ensuring reliable water access for various industries using cutting-edge technology and techniques.</p>
+                    <a href="#contact" class="btn btn-xl btn-outline-light mt-4">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="services">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our Services</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item text-center">
+                        <i class="fas fa-search fa-4x mb-3 text-primary"></i>
+                        <h4 class="mb-3">Geophysical Studies</h4>
+                        <p>We conduct comprehensive site assessments using advanced geophysical techniques to determine the best location for your well.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item text-center">
+                        <i class="fas fa-drill fa-4x mb-3 text-primary"></i>
+                        <h4 class="mb-3">Well Drilling</h4>
+                        <p>Our expert team uses advanced drilling techniques to create efficient and long-lasting water wells for various applications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item text-center">
+                        <i class="fas fa-tools fa-4x mb-3 text-primary"></i>
+                        <h4 class="mb-3">Well Development</h4>
+                        <p>We employ specialized techniques to optimize well performance, ensuring maximum water yield and longevity.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item text-center">
+                        <i class="fas fa-pump-soap fa-4x mb-3 text-primary"></i>
+                        <h4 class="mb-3">Pump Installation</h4>
+                        <p>Our team installs high-quality pumps tailored to your specific well characteristics and water needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item text-center">
+                        <i class="fas fa-camera fa-4x mb-3 text-primary"></i>
+                        <h4 class="mb-3">Well Logging</h4>
+                        <p>We use advanced logging techniques to assess well conditions, ensuring proper construction and operation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="service-item text-center">
+                        <i class="fas fa-tint fa-4x mb-3 text-primary"></i>
+                        <h4 class="mb-3">Water Quality Testing</h4>
+                        <p>Our experts conduct thorough water quality tests to ensure the safety and suitability of your water supply.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Activate the current page's nav item
+                const currentPage = window.location.pathname.split("/").pop();
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === currentPage) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
