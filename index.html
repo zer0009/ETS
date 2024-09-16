@@ -6,11 +6,11 @@
     <meta name="description" content="Engineering Trading Solutions - Providing specialized engineering services and equipment for various industries." />
     <meta name="author" content="ETS" />
     <title>ETS - Engineering Trading Solutions</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/custom-styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom-styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Header -->
@@ -29,22 +29,22 @@
             </div>
             <div class="services-grid">
                 <div class="service-item">
-                    <img src="/assets/img/services/industrial_commercial_refrigeration.jpg" alt="Industrial and Commercial Refrigeration">
+                    <img src="assets/img/services/industrial_commercial_refrigeration.jpg" alt="Industrial and Commercial Refrigeration">
                     <h4>Industrial and Commercial Refrigeration</h4>
                     <p>Providing top-notch refrigeration solutions for various industrial and commercial needs.</p>
-                    <a href="/industrial_commercial_refrigeration.html" class="btn btn-primary">Read More</a>
+                    <a href="industrial_commercial_refrigeration.html" class="btn btn-primary">Read More</a>
                 </div>
                 <div class="service-item">
-                    <img src="/assets/img/services/water_pumps.jpg" alt="Water Pumps">
+                    <img src="assets/img/services/water_pumps.jpg" alt="Water Pumps">
                     <h4>Water Pumps</h4>
                     <p>High-quality water pumps for efficient water management in various applications.</p>
-                    <a href="/water_pumps.html" class="btn btn-primary">Read More</a>
+                    <a href="water_pumps.html" class="btn btn-primary">Read More</a>
                 </div>
                 <div class="service-item">
-                    <img src="/assets/img/services/well_drilling.jpg" alt="Well Drilling">
+                    <img src="assets/img/services/well_drilling.jpg" alt="Well Drilling">
                     <h4>Well Drilling</h4>
                     <p>Expert well drilling services for reliable water access in challenging environments.</p>
-                    <a href="/well_drilling.html" class="btn btn-primary">Read More</a>
+                    <a href="well_drilling.html" class="btn btn-primary">Read More</a>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
             </div>
             <div class="about-content">
                 <p>Engineering Trading Solutions (ETS) is a leading provider of specialized engineering solutions and top-quality products for the industrial sector. With a focus on refrigeration systems, water management, and well drilling, we offer well-engineered solutions that enhance efficiency and productivity for our clients across various industries. Our commitment is to deliver innovative, high-quality products and solutions that meet the unique challenges of each project, ensuring optimal performance and reliability.</p>
-                <a href="/about.html" class="btn btn-primary btn-xl mt-4">Learn More About Us</a>
+                <a href="about.html" class="btn btn-primary btn-xl mt-4">Learn More About Us</a>
             </div>
         </div>
     </section>
@@ -101,11 +101,11 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script>
         // Load header and footer
-        fetch('/header.html')
+        fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -114,7 +114,7 @@
                 const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item');
                 navLinks.forEach(link => {
                     if (link.getAttribute('href') === currentPage || 
-                        (currentPage === '/' && link.getAttribute('href') === '/index.html')) {
+                        (currentPage === '/' && link.getAttribute('href') === 'index.html')) {
                         link.classList.add('active');
                         if (link.classList.contains('dropdown-item')) {
                             link.closest('.nav-item').querySelector('.nav-link').classList.add('active');
@@ -123,7 +123,7 @@
                 });
             });
 
-        fetch('/footer.html')
+        fetch('footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer-placeholder').innerHTML = data);
     </script>
